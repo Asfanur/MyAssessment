@@ -26,12 +26,12 @@
 
 #pragma mark - Table view data source
 
-
+// Show 12 rows
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
      return 12;
 }
 
-
+// Display dates of every cell 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"dateCell" forIndexPath:indexPath];
     NSDate *todaysDate = [NSDate date];

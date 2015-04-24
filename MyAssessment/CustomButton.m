@@ -11,11 +11,23 @@
 
 @implementation CustomButton
 
+// -------------------------------------------------------------------------------
+//	setHighlighted:highlighted
+//  Change color when the button highlighted
+// -------------------------------------------------------------------------------
+
+
 - (void)setHighlighted:(BOOL)highlighted
 {
     [self setNeedsDisplay];
     [super setHighlighted:highlighted];
 }
+
+
+// -------------------------------------------------------------------------------
+//	drawRect:rect
+//  Draw Button
+// -------------------------------------------------------------------------------
 
  - (void)drawRect:(CGRect)rect {
      // General Declarations
@@ -60,6 +72,13 @@
      CGGradientRelease(highlightedGradient);
      CGColorSpaceRelease(colorSpace);
  }
+
+// -------------------------------------------------------------------------------
+//	intrinsicContentSize
+//  Set The size of Button 
+// -------------------------------------------------------------------------------
+
+
 -(CGSize)intrinsicContentSize {
   CGSize size  = [self.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20]}];
     return CGSizeMake(size.width+30, size.height+2);

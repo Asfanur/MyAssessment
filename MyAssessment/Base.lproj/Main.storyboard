@@ -92,7 +92,7 @@
                             <constraint firstItem="O9y-Xl-T96" firstAttribute="width" secondItem="jEs-mk-OVl" secondAttribute="width" id="Npp-aa-bKb"/>
                             <constraint firstAttribute="centerX" secondItem="bpP-Zh-cWH" secondAttribute="centerX" constant="80" id="Oab-D5-Y33"/>
                             <constraint firstItem="O9y-Xl-T96" firstAttribute="top" secondItem="W7I-iW-Rec" secondAttribute="topMargin" priority="250" constant="144" id="Qmk-cr-D0h">
-                                <variation key="heightClass=compact" constant="100"/>
+                                <variation key="heightClass=compact" constant="95"/>
                             </constraint>
                             <constraint firstItem="TUx-BK-06d" firstAttribute="centerY" secondItem="bpP-Zh-cWH" secondAttribute="centerY" id="XNV-tN-qil"/>
                             <constraint firstItem="dxm-CX-XAx" firstAttribute="top" secondItem="gO5-Df-7XD" secondAttribute="bottom" priority="250" constant="80" id="YZ3-cf-qrr"/>
@@ -141,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJI-qN-XIp">
-                                <rect key="frame" x="279" y="104" width="42" height="21"/>
+                                <rect key="frame" x="279" y="84" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -222,7 +222,7 @@
                             <constraint firstAttribute="centerX" secondItem="JJI-qN-XIp" secondAttribute="centerX" id="9zx-0v-TXk"/>
                             <constraint firstItem="WBb-CY-VUT" firstAttribute="centerY" secondItem="4sF-yh-dLc" secondAttribute="centerY" id="D37-2T-FJt"/>
                             <constraint firstItem="4sF-yh-dLc" firstAttribute="top" secondItem="ZMD-Xy-4gc" secondAttribute="bottom" constant="40" id="GTm-Be-tzJ"/>
-                            <constraint firstItem="JJI-qN-XIp" firstAttribute="top" secondItem="MkY-B6-gNL" secondAttribute="bottom" constant="40" id="JQ1-hO-a5U">
+                            <constraint firstItem="JJI-qN-XIp" firstAttribute="top" secondItem="MkY-B6-gNL" secondAttribute="bottom" constant="20" id="JQ1-hO-a5U">
                                 <variation key="heightClass=compact" constant="8"/>
                             </constraint>
                             <constraint firstItem="ZMD-Xy-4gc" firstAttribute="leading" secondItem="wtP-N0-PcB" secondAttribute="leading" id="KAX-Dx-hDC"/>
@@ -236,7 +236,7 @@
                             <constraint firstAttribute="centerX" secondItem="WBb-CY-VUT" secondAttribute="centerX" constant="-80" id="eZ1-R5-o2F"/>
                             <constraint firstAttribute="centerX" secondItem="Z6V-Ht-obm" secondAttribute="centerX" constant="-80" id="fmV-0f-IoF"/>
                             <constraint firstItem="ZMD-Xy-4gc" firstAttribute="top" secondItem="x6N-Pm-YaB" secondAttribute="topMargin" constant="144" id="iyl-qA-SI4">
-                                <variation key="heightClass=compact" constant="100"/>
+                                <variation key="heightClass=compact" constant="95"/>
                             </constraint>
                             <constraint firstItem="Haf-Ye-AQp" firstAttribute="top" secondItem="wtP-N0-PcB" secondAttribute="bottom" priority="250" constant="80" id="rpY-Zx-not"/>
                             <constraint firstItem="ZMD-Xy-4gc" firstAttribute="centerY" secondItem="c4V-zG-uog" secondAttribute="centerY" id="tiQ-tP-4oX"/>

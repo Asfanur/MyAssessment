@@ -11,28 +11,34 @@
 
 @interface FirstViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *noneLabel;
-
 @end
 
 @implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
+
+// -------------------------------------------------------------------------------
+//	fromSecondViewController:unwindSegue
+//  Display which button is pressed in previous view
+// -------------------------------------------------------------------------------
+
 
 - (IBAction)fromSecondViewController:(UIStoryboardSegue *)unwindSegue
 {
     SecondViewController *secondViewController = unwindSegue.sourceViewController;
+    
     if ([secondViewController.buttonTitle isEqualToString:@"None"]) {
         self.noneLabel.text = secondViewController.buttonTitle;
     } else {
@@ -45,7 +51,12 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+// -------------------------------------------------------------------------------
+//	prepareForSegue:segue sender:sender
+//  Change background color and title of next view 
+// -------------------------------------------------------------------------------
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     SecondViewController *sVC  = segue.destinationViewController;
     
