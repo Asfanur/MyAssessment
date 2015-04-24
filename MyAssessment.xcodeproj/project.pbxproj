@@ -15,6 +15,7 @@
 		3A5467AE1AEA099F00BC0753 /* MyAssessmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5467AD1AEA099F00BC0753 /* MyAssessmentTests.m */; };
 		3A5467B91AEA0A3600BC0753 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5467B81AEA0A3600BC0753 /* FirstViewController.m */; };
 		3A5467BE1AEA0B6D00BC0753 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5467BD1AEA0B6D00BC0753 /* SecondViewController.m */; };
+		3A5467C11AEA0D0000BC0753 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A5467BF1AEA0D0000BC0753 /* CustomButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		3A5467B81AEA0A3600BC0753 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		3A5467BC1AEA0B6D00BC0753 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		3A5467BD1AEA0B6D00BC0753 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		3A5467BF1AEA0D0000BC0753 /* CustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		3A5467C01AEA0D0000BC0753 /* CustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				3A54679B1AEA099F00BC0753 /* Main.storyboard */,
+				3A5467C01AEA0D0000BC0753 /* CustomButton.h */,
+				3A5467BF1AEA0D0000BC0753 /* CustomButton.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A5467BE1AEA0B6D00BC0753 /* SecondViewController.m in Sources */,
+				3A5467C11AEA0D0000BC0753 /* CustomButton.m in Sources */,
 				3A5467971AEA099F00BC0753 /* AppDelegate.m in Sources */,
 				3A5467B91AEA0A3600BC0753 /* FirstViewController.m in Sources */,
 				3A5467941AEA099F00BC0753 /* main.m in Sources */,
