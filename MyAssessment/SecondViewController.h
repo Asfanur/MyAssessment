@@ -10,4 +10,8 @@
 
 @interface SecondViewController : UIViewController
 
+@property (nonatomic,strong) NSString *buttonTitle;
+@property (nonatomic,strong) NSString *whichButton;
+@property (nonatomic,strong) UIColor *bgColor;
+
 @end

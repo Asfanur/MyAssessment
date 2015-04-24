@@ -39,6 +39,8 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd MMMM yyyy"];
     cell.textLabel.text = [formatter stringFromDate:dateForRow];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    
     return cell;
 }
 

@@ -7,27 +7,62 @@
 //
 
 #import "SecondViewController.h"
+#import "CustomButton.h"
 
 @interface SecondViewController ()
-
+@property (nonatomic) BOOL isGoButtonPressed;
+@property (weak, nonatomic) IBOutlet UILabel *buttonPressedLabel;
 @end
 
 @implementation SecondViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
+ 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
+    self.view.backgroundColor = self.bgColor;
+    self.buttonPressedLabel.text = self.whichButton;
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)oneButtonPressed:(CustomButton *)sender {
+    self.isGoButtonPressed = YES;
+    self.buttonTitle = @"ONE";
+    [self performSegueWithIdentifier:@"customButtonTitle" sender:nil];
+}
+- (IBAction)twoButtonPressed:(CustomButton *)sender {
+    self.isGoButtonPressed = YES;
+    self.buttonTitle = @"TWO";
+    [self performSegueWithIdentifier:@"customButtonTitle" sender:nil];
+
+}
+- (IBAction)threeButtonPressed:(id)sender {
+    self.isGoButtonPressed = YES;
+    self.buttonTitle = @"THREE";
+    [self performSegueWithIdentifier:@"customButtonTitle" sender:nil];
+
+}
+
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    if (self.isMovingFromParentViewController && !self.isGoButtonPressed) {
+        NSLog(@"s");
+        self.buttonTitle = @"None";
+        [self performSegueWithIdentifier:@"customButtonTitle" sender:nil];
+
+
+    }
 }
 
 /*
